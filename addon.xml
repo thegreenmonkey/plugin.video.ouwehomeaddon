@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="plugin.video.example"
-version="2.1.0"
-name="Example Kodi Video Plugin"
-provider-name="Roman_V_M">
+<addon id="plugin.video.ouwehomeaddon"
+version="1.0.2"
+name="Animoe"
+provider-name="bob">
 <requires>
   <import addon="xbmc.python" version="2.24.0"/>
 </requires>
@@ -10,9 +10,9 @@ provider-name="Roman_V_M">
   <provides>video</provides>
 </extension>
 <extension point="xbmc.addon.metadata">
-  <summary lang="en">Example Kodi Video Plugin</summary>
-  <description lang="en">An example video plugin for Kodi mediacenter.</description>
-  <disclaimer lang="en">Free sample videos are provided by www.vidsplay.com.</disclaimer>
+  <summary lang="en">shit wadup</summary>
+  <description lang="en">It's ya boy</description>
+  <disclaimer lang="en">Hilary conspericy theory</disclaimer>
   <assets>
     <icon>icon.png</icon>
     <fanart>fanart.jpg</fanart>
@@ -21,5 +21,6 @@ provider-name="Roman_V_M">
     <screenshot>resources\screenshot-03.jpg</screenshot>    
   </assets>
   <news>Updated with latest artwork metadata</news>
+  <source>https://github.com/thegreenmonkey/plugin.video.ouwehomeaddon</source>
 </extension>
 </addon>
