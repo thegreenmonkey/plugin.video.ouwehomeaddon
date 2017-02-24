@@ -20,14 +20,30 @@ _handle = int(sys.argv[1])
 # Here we use a fixed set of properties simply for demonstrating purposes
 # In a "real life" plugin you will need to get info and links to video files/streams
 # from some web-site or online service.
-VIDEOS = {'Animoe': [{'name': 'Spireted Away',
-                       'thumb': 'https://myanimelist.cdn-dena.com/images/anime/6/79597.jpg',
-                       'video': 'https://redirector.googlevideo.com/videoplayback?id=803a48f8a7eea9f6&itag=22&source=webdrive&requiressl=yes&ttl=transient&mm=30&mn=sn-p5qs7n76&ms=nxu&mv=u&pl=25&mime=video/mp4&lmt=1481956587637995&mt=1487859294&ip=149.56.134.248&ipbits=0&expire=1487873828&sparams=ip,ipbits,expire,id,itag,source,requiressl,ttl,mm,mn,ms,mv,pl,mime,lmt&signature=53CE3B9E2B15CB71FDBD8067CB8246326E868BC2.5C4177453838296FD9E77489A70B8067747FDDC2&key=ck2&app=explorer&kparams=MzEuMjAxLjE5Ni4xMDA=&upx=TW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzU2LjAuMjkyNC44NyBTYWZhcmkvNTM3LjM2&tr=2',
-                       'genre': 'Studio Ghibli'},
-                      {'name': 'My Neighbor Totoro',
-                       'thumb': 'https://myanimelist.cdn-dena.com/images/anime/4/75923.jpg',
-                       'video': 'https://redirector.googlevideo.com/videoplayback?id=fc55004bf8ab9c2e&itag=22&source=webdrive&requiressl=yes&ttl=transient&mm=30&mn=sn-vgqs7nlz&ms=nxu&mv=m&pl=25&mime=video/mp4&lmt=1482047943509616&mt=1487860468&ip=149.56.134.248&ipbits=0&expire=1487874955&sparams=ip,ipbits,expire,id,itag,source,requiressl,ttl,mm,mn,ms,mv,pl,mime,lmt&signature=2D3A30A09203708AC16020F7FDB803A8FAF8E099.6A199FE7F3B8E43578B654E9B38BDE3E5E5B2175&key=ck2&app=explorer&kparams=MzEuMjAxLjE5Ni4xMDA=&upx=TW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzU2LjAuMjkyNC44NyBTYWZhcmkvNTM3LjM2&tr=2',
-                       'genre': 'Studio Ghibli'}
+VIDEOS = {'Animoe': [{'name': 'preview',
+                       'thumb': 'https://myanimelist.cdn-dena.com/images/anime/4/64447.jpg',
+                       'video': 'http://2.bp.blogspot.com/0uCoi5JSupOqZ_AFtp-Ng4ufXpyOXGbVjMxSbZzJRkLtrPiFyp6EXVc_yFh5Tlq9s1rjW7_SqsjXEmD83Q8aquf3rYw-Vw8=m22',
+                       'genre': 'gay'},
+					 {'name': 'episode 1',
+                       'thumb': 'https://myanimelist.cdn-dena.com/images/anime/4/64447.jpg',
+                       'video': 'https://redirector.googlevideo.com/videoplayback?id=9702c6470437f931&itag=22&source=webdrive&requiressl=yes&ttl=transient&mm=30&mn=sn-ab5l6nzl&ms=nxu&mv=m&pl=48&mime=video/mp4&lmt=1481944189535930&mt=1487954848&ip=2604:a880:800:a1::796:9001&ipbits=0&expire=1487969365&sparams=ip,ipbits,expire,id,itag,source,requiressl,ttl,mm,mn,ms,mv,pl,mime,lmt&signature=03A8CBDC4CCEA989A13FC9EC2195B68D2A1B4CC7.3D25CBBA54FE26725D6995ED81BFCD8A78157B5C&key=ck2&app=explorer&kparams=MzEuMjAxLjE5Ni4xMDA=&upx=TW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzU2LjAuMjkyNC44NyBTYWZhcmkvNTM3LjM2&tr=2',
+                       'genre': 'gay'},
+					 {'name': 'episode 2',
+                       'thumb': 'https://myanimelist.cdn-dena.com/images/anime/4/64447.jpg',
+                       'video': 'https://redirector.googlevideo.com/videoplayback?id=64282dd317e8fb6c&itag=22&source=webdrive&requiressl=yes&ttl=transient&mm=30&mn=sn-ab5l6nly&ms=nxu&mv=m&pl=48&mime=video/mp4&lmt=1468808553815108&mt=1487954848&ip=2604:a880:800:a1::796:9001&ipbits=0&expire=1487969341&sparams=ip,ipbits,expire,id,itag,source,requiressl,ttl,mm,mn,ms,mv,pl,mime,lmt&signature=473690D06795AC45E90FFC85AC7EFF28100326AC.998B9B4BBC01BACB6FDF6D2E6C7D1872E4967585&key=ck2&app=explorer&kparams=MzEuMjAxLjE5Ni4xMDA=&upx=TW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzU2LjAuMjkyNC44NyBTYWZhcmkvNTM3LjM2&tr=2',
+                       'genre': 'gay'},
+					 {'name': 'episode 3',
+                       'thumb': 'https://myanimelist.cdn-dena.com/images/anime/4/64447.jpg',
+                       'video': 'https://redirector.googlevideo.com/videoplayback?id=50be0eaa0584556e&itag=22&source=webdrive&requiressl=yes&ttl=transient&mm=30&mn=sn-ab5l6n6l&ms=nxu&mv=m&pl=48&mime=video/mp4&lmt=1481948681042063&mt=1487954247&ip=2604:a880:800:a1::796:9001&ipbits=0&expire=1487968714&sparams=ip,ipbits,expire,id,itag,source,requiressl,ttl,mm,mn,ms,mv,pl,mime,lmt&signature=9C65EBE082B87612FC0881436FB69A524AE112C9.18B115E6C99644F842E01D760476F39BF6C3300F&key=ck2&app=explorer&kparams=MzEuMjAxLjE5Ni4xMDA=&upx=TW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzU2LjAuMjkyNC44NyBTYWZhcmkvNTM3LjM2&tr=2',
+                       'genre': 'gay'},
+					 {'name': 'episode 4',
+                       'thumb': 'https://myanimelist.cdn-dena.com/images/anime/4/64447.jpg',
+                       'video': 'https://redirector.googlevideo.com/videoplayback?id=671f35930fa6f043&itag=22&source=webdrive&requiressl=yes&ttl=transient&mm=30&mn=sn-ab5l6n67&ms=nxu&mv=m&pl=48&mime=video/mp4&lmt=1468807695695507&mt=1487954614&ip=2604:a880:800:a1::796:9001&ipbits=0&expire=1487969120&sparams=ip,ipbits,expire,id,itag,source,requiressl,ttl,mm,mn,ms,mv,pl,mime,lmt&signature=8D47C4BB7AAB2F084BBDBA0E9CE4A2FED3FFCC98.07737DB3081F2602DABD31E297B25D1AAABC3BFB&key=ck2&app=explorer&kparams=MzEuMjAxLjE5Ni4xMDA=&upx=TW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzU2LjAuMjkyNC44NyBTYWZhcmkvNTM3LjM2&tr=2',
+                       'genre': 'gay'},
+					 {'name': 'episode 5',
+                       'thumb': 'https://myanimelist.cdn-dena.com/images/anime/4/64447.jpg',
+                       'video': 'https://redirector.googlevideo.com/videoplayback?id=bf7679f55142f597&itag=22&source=webdrive&requiressl=yes&ttl=transient&mm=30&mn=sn-ab5l6n6s&ms=nxu&mv=m&pl=48&mime=video/mp4&lmt=1468800798897011&mt=1487954553&ip=2604:a880:800:a1::796:9001&ipbits=0&expire=1487969057&sparams=ip,ipbits,expire,id,itag,source,requiressl,ttl,mm,mn,ms,mv,pl,mime,lmt&signature=6A4EAE93098718527EA615E58423A463B925AC4A.092501B83313335B3CF950704EC8920E74216D70&key=ck2&app=explorer&kparams=MzEuMjAxLjE5Ni4xMDA=&upx=TW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzU2LjAuMjkyNC44NyBTYWZhcmkvNTM3LjM2&tr=2',
+                       'genre': 'gay'}
 					   ]}
 
 
